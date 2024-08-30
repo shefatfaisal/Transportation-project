@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root {
+    --main-bg-color: #545454;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: var(--main-bg-color);
+}
+nav{
+    display: flex;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 225px;
+    padding: 0 25px;
+}
+nav ul{
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 493px;
+    height: 27px;
+    border-radius: 5px;
+    margin: 0 16px 0 56px;
+    padding: 0 12px;
+}
+.btn{
+    padding: 5px 10px;
+    color: white;
+    background: var(--main-bg-color);
+    border: 2px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.btn2{
+    cursor: pointer;
+}
+.container{
+    min-height: calc(100vh - 58px - 12vh);
+}
+.slider{
+    margin: auto;
+    width: 100vw;
+    /* float: right; */
+    margin: 12px auto;
+}
+.card{
+    max-width: 93vw;
+    margin: auto;
+}
+.platform{
+    text-align: center;
+    font-size: larger;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    width: 900px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 50px;
+}
+.card-item{
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    text-align: center;
+    height: 300px;
+    width: 500px;
+    margin: 0 15px 30px;
+    background-color: rgb(230, 228, 228);
+}
+.card-item2{
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    margin: 0 15px 30px;
+}
+.my-1{
+    margin: 20px 0;
+}
+.my-2{
+    margin: 26px 0;
+    text-align: center;
+}
+.size{
+    font-size: 19px;
+    margin: 10px;
+}
+.text-center{
+    text-align: center;
+}
+#hehe{
+    background-color: var(--main-bg-color);
+  height: 5vh;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+footer{
+    background-color: var(--main-bg-color);
+    height: 12vh;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}

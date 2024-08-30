@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style2.css">
+    <link rel="stylesheet" href="styles/utils2.css">
+    <link rel="stylesheet" href="styles/responsive2.css">
+</head>
+
+<body background="images/bgm.png">
+    <%- include("partials/header.ejs") %>
+    <main>
+        <div class="container">
+            <h1>Discover Your Destination</h1>
+            <div class="search-box">
+                <form action="/submit" method="POST">
+                    <label for="departure">Select Your Location:</label>
+                    <input type="text" id="departure" name="departure" placeholder="From">
+                    <label for="destination">Select Your Destination:</label>
+                    <input type="text" id="destination" name="destination" placeholder="To"> <br><br>
+
+                    <button id="findPathsButton">Find Paths</button>
+                </form>
+                    <script>
+                        document.getElementById('findPathsButton').addEventListener('click', async () => {
+                            // const destination = document.getElementById('destination').value;
+                            window.location.href = '/search';
+                            // const data = await response.json();
+                            
+                            
+                        });
+                    </script>
+                    
+                
+            </div>
+        </div>
+    </main>
+    <%- include("partials/footer.ejs") %>
+    
+</body>
+</html>

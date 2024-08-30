@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+ba
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <link rel="stylesheet" href="styles/responsive2.css">
+</head>
+ 
+<body>
+    <%- include("partials/header.ejs") %>
+    <main>
+        <div class="container">
+            <div class="slider">
+                <img src="images/front.png" alt="">
+            </div>
+            <div class="card">
+                <h1 class="my-2">eQrepository Platform</h1>
+                <div class="my-2"><p class="text-center"><h4>eQrepository is a B2G platform that enables public transport authorities to efficiently create and manage transit networks and schedules in GTFS format, ensuring real-time accuracy and ease of maintenance.</h4></p></div>
+                <div class="cards">
+                    <div class="card-item">
+                        <h2 class="my-1">Transit Network</h2>
+                        <p class="size">Set up the transit network by adding terminals, stops, routes, and depots manually or by importing stop data with latitude/longitude coordinates. Existing GTFS Static data files can also be imported.</p>
+                    </div>
+                    <div class="card-item">
+                        <h2 class="my-1">Schedules</h2>
+                        <p class="size">Create GTFS-based schedules to stay updated. Manage routes, stops, departure, and arrival times to match passenger demand and traffic conditions.</p>
+                    </div>
+                    <div class="card-item">
+                        <h2 class="my-1">GTFS Static</h2>
+                        <p class="size">Easily generate GTFS-based schedules to stay updated. Manage routes, stops, departure, and arrival times to match passenger demand and traffic conditions</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <%- include("partials/footer.ejs") %>
+</body>
+
+</html>
